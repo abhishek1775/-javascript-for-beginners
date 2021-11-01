@@ -1,4 +1,5 @@
-const qoutes = [{
+const quotes = [
+    {
     quote: "그런즉 누구든지 그리스도 안에 있으면 새로운 피조물이라 이전 것은 지나갔으니 보라 새것이 되었도다",
     author: "고린도후서 5:17",
 },
@@ -39,10 +40,10 @@ const qoutes = [{
     author: "히브리서 10:24,25",
 }];
 
-const qoute = document.querySelector("#quote span:first-child");
+const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
-const todaysQoute = qoutes[Math.floor(Math.random() * qoutes.length)];
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-qoute.innerText = todaysQoute.quote;
-author.innerText = todaysQoute.author;
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
